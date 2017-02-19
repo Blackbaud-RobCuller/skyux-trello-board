@@ -1,0 +1,16 @@
+<h1>
+    {{column.title}}</h1>
+<div>
+    <div *ngFor="let card of column.cards">
+        <!--<h1>{{ card.title }}</h1>-->
+        <sky-card size="small">
+            <sky-card-title>{{ card.title }}</sky-card-title>
+            <sky-card-content>{{card.description}}</sky-card-content>
+            <sky-card-actions *ngIf="showAction">
+                <button 
+                (click)="advanceCard(card.title, column.title)"
+                class="sky-btn sky-btn-default">Advance</button>
+            </sky-card-actions>
+        </sky-card>
+    </div>
+</div>

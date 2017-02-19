@@ -1,0 +1,12 @@
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    // border: solid 1px rebeccapurple;
+    justify-content: center;
+}
+
+.flex-item {
+    flex: 0 0 300px;
+}

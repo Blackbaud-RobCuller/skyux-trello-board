@@ -1,0 +1,11 @@
+
+<input [(ngModel)]="title" type="text">
+<button 
+    (click)="createCard(title)">Add a card
+</button>
+<div class="flex-container">
+    <div *ngFor="let column of columns" class="flex-item">
+        <trello-column [column]="column"></trello-column>
+    </div>
+</div>
+
